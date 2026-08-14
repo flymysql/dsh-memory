@@ -35,7 +35,7 @@ git commit -m "feat: dsh-memory — cross-session memory vault for DeepSeek Harn
 - settings page (记忆库 / Memory) over the webServer JSON route
 - bilingual README, MIT license"
 git branch -M main
-git remote add origin https://github.com/<your-account>/dsh-memory.git
+git remote add origin https://github.com/flymysql/dsh-memory.git
 git push -u origin main
 ```
 
@@ -69,7 +69,7 @@ Open an issue/PR in each of these with the template below:
 
 Cross-session memory vault for DeepSeek Harness.
 
-- **Repo**: https://github.com/<your-account>/dsh-memory
+- **Repo**: https://github.com/flymysql/dsh-memory
 - **npm**: https://www.npmjs.com/package/dsh-memory-vault
 - **Topic**: dsh-plugin
 - **Category**: productivity / memory
