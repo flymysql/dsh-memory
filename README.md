@@ -1,4 +1,4 @@
-# dsh-memory
+# dsh-memory-vault
 
 Cross-session memory vault for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (DSH).
 
@@ -12,7 +12,7 @@ Every DSH session starts from zero. `dsh-memory` gives your agents a persistent 
 ## Install
 
 ```bash
-npm install dsh-memory
+npm install dsh-memory-vault
 ```
 
 Add a row to your profile `cordis.yml` (or `cordis.patch.yml`):

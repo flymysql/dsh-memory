@@ -46,7 +46,9 @@ npm login          # npm account (or `npm publish --access public` with a token)
 npm publish
 ```
 
-Package naming already follows the community convention (`dsh-memory`, keywords include `dsh-plugin`).
+Package naming follows the community convention (`dsh-memory-vault`, keywords include `dsh-plugin`).
+> Note: the bare `dsh-memory` npm name was already taken (a SQLite-based memory plugin published 2026-08-13);
+> this package ships as **`dsh-memory-vault`** — storage-domain persistence, no sidecar services.
 Check the published page shows the **dsh-plugin** keyword so the npm search surfaces it.
 
 ## 4. Get listed in the community indexes
@@ -63,12 +65,12 @@ Open an issue/PR in each of these with the template below:
 ### Submission template (issue or PR body)
 
 ```markdown
-## dsh-memory
+## dsh-memory-vault
 
 Cross-session memory vault for DeepSeek Harness.
 
 - **Repo**: https://github.com/<your-account>/dsh-memory
-- **npm**: https://www.npmjs.com/package/dsh-memory
+- **npm**: https://www.npmjs.com/package/dsh-memory-vault
 - **Topic**: dsh-plugin
 - **Category**: productivity / memory
 
@@ -81,7 +83,7 @@ durable storage domain (`dsh_memory`, json backend). A Settings page (记忆库 
 lists, adds, and deletes entries through the harness webServer JSON route.
 
 ### Install
-npm install dsh-memory, then add `{ id: dsh-memory, name: dsh-memory }` to cordis.yml.
+npm install dsh-memory-vault, then add `{ id: dsh-memory, name: dsh-memory-vault }` to cordis.yml.
 
 ### Why it matters
 Every DSH session starts from zero; this closes the loop on cross-session context —

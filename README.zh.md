@@ -1,4 +1,4 @@
-# dsh-memory
+# dsh-memory-vault
 
 为 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（DSH）打造的跨会话记忆库插件。
 
@@ -12,7 +12,7 @@
 ## 安装
 
 ```bash
-npm install dsh-memory
+npm install dsh-memory-vault
 ```
 
 在你的 profile `cordis.yml`（或 `cordis.patch.yml`）里加一行：

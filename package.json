@@ -1,5 +1,5 @@
 {
-  "name": "dsh-memory",
+  "name": "dsh-memory-vault",
   "version": "0.1.0",
   "description": "Cross-session memory vault for DeepSeek Harness: remember / recall / forget tools, per-turn prompt injection, and a browser management page.",
   "keywords": [
