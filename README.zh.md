@@ -12,14 +12,20 @@
 ## 安装
 
 ```bash
+dsh plugin --profile web add dsh-memory-vault
+```
+
+`dsh.bundle` manifest 会自动把 `dsh-memory` 行挂进 profile。也可以手动安装：
+
+```bash
 npm install dsh-memory-vault
 ```
 
-在你的 profile `cordis.yml`（或 `cordis.patch.yml`）里加一行：
+然后在你的 profile `cordis.yml`（或 `cordis.patch.yml`）里加一行：
 
 ```yaml
 - id: dsh-memory
-  name: dsh-memory
+  name: dsh-memory-vault
 ```
 
 ## 用法
@@ -45,7 +51,7 @@ memory_remember(content="User prefers Windows deployment; test command is `pnpm 
 
 ```yaml
 - id: dsh-memory
-  name: dsh-memory
+  name: dsh-memory-vault
   config:
     injectLimit: 12
     recallLimit: 20

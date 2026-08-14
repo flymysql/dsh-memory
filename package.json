@@ -1,6 +1,6 @@
 {
   "name": "dsh-memory-vault",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Cross-session memory vault for DeepSeek Harness: remember / recall / forget tools, per-turn prompt injection, and a browser management page.",
   "keywords": [
     "deepseek-harness",
@@ -14,14 +14,26 @@
   "exports": {
     ".": "./lib/index.js",
     "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
     "./package.json": "./package.json"
   },
   "files": [
-    "lib"
+    "lib",
+    "cordis.patch.yml"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flymysql/dsh-memory.git"
+  },
   "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
     "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime"
+      ],
       "platform": "web"
     }
   },
@@ -30,7 +42,8 @@
     "@deepseek-ai/dsh-storage": "^0.1.0-rc.6",
     "@deepseek-ai/dsh-tools": "^0.1.0-rc.6",
     "@deepseek-ai/dsh-system-prompt": "^0.1.0-rc.6",
-    "@deepseek-ai/cordis": "^4.0.1"
+    "@deepseek-ai/cordis": "^4.0.1",
+    "react": "^18.2.0"
   },
   "dependencies": {
     "zod": "^4.4.3"

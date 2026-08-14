@@ -12,14 +12,20 @@ Every DSH session starts from zero. `dsh-memory` gives your agents a persistent 
 ## Install
 
 ```bash
+dsh plugin --profile web add dsh-memory-vault
+```
+
+The `dsh.bundle` manifest wires the `dsh-memory` row into the profile automatically. To install by hand instead:
+
+```bash
 npm install dsh-memory-vault
 ```
 
-Add a row to your profile `cordis.yml` (or `cordis.patch.yml`):
+then add a row to your profile `cordis.yml` (or `cordis.patch.yml`):
 
 ```yaml
 - id: dsh-memory
-  name: dsh-memory
+  name: dsh-memory-vault
 ```
 
 ## Usage
@@ -45,7 +51,7 @@ When context from an earlier session matters, the agent calls `memory_recall(que
 
 ```yaml
 - id: dsh-memory
-  name: dsh-memory
+  name: dsh-memory-vault
   config:
     injectLimit: 12
     recallLimit: 20
